@@ -51,7 +51,7 @@ find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 
 install -d %{buildroot}%{_libdir}/apache-extramodules
 install -d %{buildroot}%{_sysconfdir}/httpd/modules.d
-install -d %{buildroot}%{_localstatedir}/mod_roaming
+install -d %{buildroot}%{_localstatedir}/lib/mod_roaming
 
 install -m0755 .libs/*.so %{buildroot}%{_libdir}/apache-extramodules/
 bzcat %{SOURCE1} > %{buildroot}%{_sysconfdir}/httpd/modules.d/%{mod_conf}
@@ -80,6 +80,6 @@ fi
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/httpd/modules.d/%{mod_conf}
 %attr(0755,root,root) %{_libdir}/apache-extramodules/%{mod_so}
 %{_var}/www/html/addon-modules/*
-%attr(-,apache,apache) %dir %{_localstatedir}/mod_roaming
+%attr(-,apache,apache) %dir %{_localstatedir}/lib/mod_roaming
 
 
