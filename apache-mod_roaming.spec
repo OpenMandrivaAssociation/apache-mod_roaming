@@ -6,7 +6,7 @@
 Summary:	Enables Netscape Communicator roaming profiles with apache
 Name:		apache-%{mod_name}
 Version:	2.0.0
-Release:	%mkrel 12
+Release:	%mkrel 13
 Group:		System/Servers
 License:	BSD-style
 URL:		http://www.klomp.org/mod_roaming/
