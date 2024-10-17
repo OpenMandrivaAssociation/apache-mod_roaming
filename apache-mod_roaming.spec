@@ -9,7 +9,7 @@ Version:	2.0.0
 Release:	15
 Group:		System/Servers
 License:	BSD-style
-URL:		http://www.klomp.org/mod_roaming/
+URL:		https://www.klomp.org/mod_roaming/
 Source0:	%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch:		%{mod_name}-register.patch
